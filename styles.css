@@ -1,0 +1,227 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    user-select: none;
+}
+
+html{
+    background-color: #ff99cc;
+}
+
+#quiz{
+    background-color: #66ccff;
+    position: relative;
+    height: auto;
+    width: 900px;
+    margin: 30px auto;
+    border-radius: 40px;
+    box-shadow: 5px 7px 5px 5px rgba(0,26,51,0.5);
+    padding: 2px 50px 50px 50px;
+}
+
+#h1{
+    position: relative;
+    text-align: center;
+    font-size: 60px;
+    background-color: #ff6699;
+    color: #ffffff;
+    border-radius: 40px;
+    margin: 30px 10px 30px 10px;
+    padding: 2px 0px;
+    font-family: 'Brush Script MT', cursive;
+}
+
+#tracker{
+    position: relative;
+    margin: 20px 10px 10px 10px;
+    padding: 0 10px 0 10px;
+    font-family: 'Brush Script MT', cursive;
+}
+
+.num{
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    background-color: #ff66cc;
+    border-radius: 50%;
+    text-align: center;
+    color: white;
+    padding: 11px;
+    margin: 0px 10px 10px 10px;
+    font-weight: bolder;
+    font-size: 22px;
+    border: 1.5px solid white;
+    font-family: 'Brush Script MT', cursive;
+}
+
+hr {
+    border: 2px solid #ffccff;
+    position: relative;
+    clear: both;
+    font-family: 'Brush Script MT', cursive;
+}
+
+#question {
+    position: relative;
+    color: white;
+    font-size: 35px;
+    font-weight: bold;
+    text-align: left;
+    margin-left: 10px;
+    font-family: 'Brush Script MT', cursive;
+}
+
+.options {
+    position: relative;
+    width: 550px;
+    margin-top: 15px;
+    font-family: 'Brush Script MT', cursive;
+}
+
+.button {
+    position: relative;
+    background-color: #ffccff;
+    width: 250px;
+    height: auto;
+    border: 1.5px solid #ff99cc;
+    border-radius: 75px;
+    margin: 10px;
+    font-family: 'Brush Script MT', cursive;
+}
+
+.button span {
+    text-align: center;
+    font-size: 20px;
+    padding: 10px;
+    font-weight: bold;
+    color: #660033; /* Dark Pink */
+    font-family: 'Brush Script MT', cursive;
+}
+
+.button:hover {
+    background-color: #ff99cc; 
+    cursor: pointer;
+    font-family: 'Brush Script MT', cursive;
+}
+
+#submit {
+    position: relative;
+    float: right;
+    background-color: #ff99cc;
+    color: white;
+    width: 230px;
+    padding: 7px;
+    border-radius: 50px;
+    font-size: 28px;
+    font-weight: 900;
+    font-family: 'Brush Script MT', cursive;
+    margin: 5px 0px 25px 10px;
+    border: 1px solid #ff66cc;
+    text-align: center;
+    box-shadow: 2px 2px 0px 0px rgba(191, 191, 191, 0.5);
+}
+
+#submit:hover {
+    cursor: pointer;
+    background-color: #ff66cc;
+    font-family: 'Brush Script MT', cursive;
+}
+
+footer {
+    position: relative;
+    margin-bottom: 30px;
+    font-family: 'Brush Script MT', cursive;
+}
+
+#timer {
+    position: relative;
+    float: right;
+    text-align: right;
+    margin-top: 20px;
+    font-size: 30px;
+    color: white;
+    font-family: 'Brush Script MT', cursive;
+}
+
+#progress {
+    position: relative;
+    float: left;
+    text-align: right;
+    margin-top: 20px;
+    font-size: 30px;
+    color: white;
+    font-family: 'Brush Script MT', cursive;
+}
+
+#resultBox {
+    display: none;
+    font-family: 'Brush Script MT', cursive;
+}
+
+#quizSet {
+
+}
+
+#result {
+    text-align: center;
+    font-size: 40px;
+    color: white;
+    font-family: 'Brush Script MT', cursive;
+}
+
+#retake {
+    position: relative;
+    display: block;
+    margin: 10px auto 25px auto;
+    background-color: #ff99cc;
+    color: white;
+    width: 230px;
+    padding: 7px;
+    border-radius: 50px;
+    font-size: 28px;
+    font-weight: 900;
+    font-family: 'Brush Script MT', cursive;
+    border: 1px solid #ff66cc;
+    text-align: center;
+    box-shadow: 2px 2px 0px 0px rgba(191,191,191,0.5);
+}
+
+#retake:hover {
+    cursor: pointer;
+    background-color: #ff66cc;
+    font-family: 'Brush Script MT', cursive;
+}
+
+.button:focus, #submit:focus, #retake:focus {
+    outline: none;
+    font-family: 'Brush Script MT', cursive;
+}
+
+@keyframes swipeLeft {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+@keyframes swipeIn {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.swipe-left {
+    animation: swipeLeft 0.5s ease-out forwards;
+}
+
+.swipe-in {
+    animation: swipeIn 0.5s ease-out forwards;
+}
